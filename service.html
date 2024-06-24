@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="input.css">
+
+</head>
+<html>
+<!-- TOPBAR -->
+<nav class="bg-black px-4 md:px-8 py-2 w-full">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-2 md:mb-0">
+                <ul class="flex flex-col md:flex-row gap-2 md:gap-4 text-center md:text-left">
+                    <li class="text-white text-sm flex items-center"><i class="ri-map-pin-2-line mr-1"></i> 123 Street, New York, USA</li>
+                    <li class="text-white text-sm flex items-center"><i class="ri-phone-fill mr-1"></i> +012 345 6789</li>
+                    <li class="text-white text-sm flex items-center"><i class="ri-mail-open-fill mr-1"></i> info@example.com</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="flex gap-2 md:gap-4">
+                    <li class="text-white text-sm rounded-full border-b hover:bg-blue-800"><i class="ri-twitter-fill"></i></li>
+                    <li class="text-white text-sm rounded-full border-b hover:bg-blue-800"><i class="ri-facebook-fill"></i></li>
+                    <li class="text-white text-sm rounded-full border-b hover:bg-blue-800"><i class="ri-linkedin-fill"></i></li>
+                    <li class="text-white text-sm rounded-full border-b hover:bg-pink-800"><i class="ri-instagram-fill"></i></li>
+                    <li class="text-white text-sm rounded-full border-b hover:bg-red-800"><i class="ri-youtube-fill"></i></li>
+                </ul>
+            </div>
+        </div>
+</nav>  
+<!--NAVBAR  -->
+<nav class=" p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Logo and Branding -->
+      <div class="logo flex items-center px-4">
+        <img src="images/tourism-design-logo.png" alt="Logo" class="h-10 rounded-full">
+      </div>
+      
+      <!-- Mobile Menu Toggle -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-black focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-4 items-center">
+        <a href="index.html" class="text-black font-bold hover:text-green-500 hover:underline focus:outline-none">Home</a>
+        <a href="about.html" class="text-black font-bold hover:text-green-500 hover:underline">About</a>
+        <a href="service.html" class="text-black font-bold hover:text-green-500 hover:underline">Services</a>
+        <a href="package.html" class="text-black font-bold hover:text-green-500 hover:underline">Packages</a>
+        <a href="destination.html" class="text-black font-bold hover:text-green-500 hover:underline">Destination</a>
+        <a href="team.html" class="text-black font-bold hover:text-green-500 hover:underline">Team</a>
+        <a href="contact.html" class="text-black font-bold hover:text-green-500 hover:underline">Contact</a>
+        <a href="register.html">
+          <button class="px-6 py-3 text-lg font-bold text-white uppercase bg-green-500 transition duration-300 shadow-lg hover:bg-white hover:text-black">
+            Register
+          </button>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu (Initially Hidden) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-400">
+      <a href="index.html" class="block px-4 py-2 text-black font-bold hover:text-green-500">Home</a>
+      <a href="about.html" class="block px-4 py-2 text-black font-bold hover:text-green-500">About</a>
+      <a href="service.html" class="block px-4 py-2 text-black font-bold hover:text-green-500">Services</a>
+      <a href="package.html" class="block px-4 py-2 text-black font-bold hover:text-green-500">Packages</a>
+      <a href="destination.html" class="block px-4 py-2 text-black font-bold hover:text-green-500">Destination</a>
+      <a href="team.html" class="block px-4 py-2 text-black font-bold hover:text-green-500">Team</a>
+      <a href="contact.html" class="block px-4 py-2 text-black font-bold hover:text-green-500">Contact</a>
+    </div>
+    
+  </nav>
+              <!--SERVICE SECTION-->
+              <div class="main mt-8">
+                <div class="flex justify-center">
+                    <div class=" items-center">
+                        <div class="line h-[3px] bg-green-300 w-12 ml-2 mt-2"></div>
+                        <div class="line h-[2px] bg-green-300 w-14 mt-2 ml-2"></div>
+                    </div>
+                    <h1 class="text-green-500 font-bold text-xl">Services</h1>
+                    <div class=" items-center">
+                        <div class="line h-[3px] bg-green-300 w-12 ml-2 mt-2"></div>
+                        <div class="line h-[2px] bg-green-300 w-14 mt-2 ml-2"></div>
+                    </div>  
+                </div>
+                <h1 class="text-black font-bold text-center text-3xl">OUR SERVICES</h1>
+                <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-4 m-2 px-4 mt-4 mb-4">
+                    <div class="text-center bg-white hover:bg-green-400 shadow-xl p-4">
+                        <i class="ri-global-line text-green-500 hover:text-white text-4xl"></i>
+                        <h1 class="hover:text-white font-bold">WorldWide Tours</h1>
+                        <p class="hover:text-white">Diam elitr kasd sed at elitr <br>sed ipsum justo dolor sed <br>clita amet diam</p>
+                    </div>
+                    <div class="text-center bg-white hover:bg-green-400 shadow-xl p-4">
+                        <i class="ri-hotel-line text-green-500 hover:text-white text-4xl"></i>
+                        <h1 class="hover:text-white font-bold">
+                            Hotel Reservation</h1>
+                        <p class="hover:text-white">Diam elitr kasd sed at elitr <br>sed ipsum justo dolor sed <br>clita amet diam</p>
+                    </div>
+                    <div class="text-center bg-white hover:bg-green-400 shadow-xl p-4">
+                        <i class="ri-user-fill text-green-500 hover:text-white text-4xl"></i>
+                        <h1 class="hover:text-white font-bold">Travel Guides</h1>
+                        <p class="hover:text-white">Diam elitr kasd sed at elitr <br>sed ipsum justo dolor sed <br>clita amet diam</p>
+                    </div>
+                    <div class="text-center bg-white hover:bg-green-400 shadow-xl p-4">
+                        <i class="ri-settings-2-fill text-green-500 hover:text-white text-4xl"></i>
+                        <h1 class="hover:text-white font-bold">Event Management</h1>
+                        <p class="hover:text-white">Diam elitr kasd sed at elitr <br>sed ipsum justo dolor sed <br>clita amet diam</p>
+                    </div>
+                </div>
+            
+                <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-4 m-2 px-4 mt-4 mb-4">
+                    <div class="text-center bg-white hover:bg-green-400 shadow-xl p-4">
+                        <i class="ri-global-line text-green-500 hover:text-white text-4xl"></i>
+                        <h1 class="hover:text-white font-bold">WorldWide Tours</h1>
+                        <p class="hover:text-white">Diam elitr kasd sed at elitr <br>sed ipsum justo dolor sed <br>clita amet diam</p>
+                    </div>
+                    <div class="text-center bg-white hover:bg-green-400 shadow-xl p-4">
+                        <i class="ri-hotel-line text-green-500 hover:text-white text-4xl"></i>
+                        <h1 class="hover:text-white font-bold">
+                            Hotel Reservation</h1>
+                        <p class="hover:text-white">Diam elitr kasd sed at elitr <br>sed ipsum justo dolor sed <br>clita amet diam</p>
+                    </div>
+                    <div class="text-center bg-white hover:bg-green-400 shadow-xl p-4">
+                        <i class="ri-user-fill text-green-500 hover:text-white text-4xl"></i>
+                        <h1 class="hover:text-white font-bold">Travel Guides</h1>
+                        <p class="hover:text-white">Diam elitr kasd sed at elitr <br>sed ipsum justo dolor sed <br>clita amet diam</p>
+                    </div>
+                    <div class="text-center bg-white hover:bg-green-400 shadow-xl p-4">
+                        <i class="ri-settings-2-fill text-green-500 hover:text-white text-4xl"></i>
+                        <h1 class="hover:text-white font-bold">Event Management</h1>
+                        <p class="hover:text-white">Diam elitr kasd sed at elitr <br>sed ipsum justo dolor sed <br>clita amet diam</p>
+                    </div>
+                </div>
+            </div>
+
+
+                    <!--TESTIMONIAL  -->
+<!-- Include Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide my-2 h-50 w-full flex items-center border-2 justify-center">
+            <div class="testimonial-card w-full bg-white shadow-md rounded-lg p-2">
+                <div class="text-center">
+                  <div class=" flex  justify-center">  <img src="images\testimonial-1.jpg" alt="" class="rounded-full h-20 w-20"></div>
+                    <p class="text-gray-600 font-bold">Jane Smith</p>
+                </div>
+                <p class="text-gray-800 mb-4 text-center">"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin velit."</p>  
+            </div>
+        </div>
+        <div class="swiper-slide my-2 h-50 w-full flex items-center border-2  justify-center">
+            <div class="testimonial-card w-full bg-white shadow-md rounded-lg p-2">
+                <div class="text-center">
+                  <div class=" flex  justify-center">  <img src="images\testimonial-2.jpg" alt="" class="rounded-full h-20 w-20"></div>
+                    <p class="text-gray-600 font-bold">Jane Smith</p>
+                </div>
+                <p class="text-gray-800 mb-4 text-center">"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin velit."</p>  
+            </div>
+        </div>
+        <div class="swiper-slide my-2 h-50 w-full flex items-center border-2  justify-center">
+            <div class="testimonial-card w-full bg-white shadow-md rounded-lg p-2">
+                <div class="text-center">
+                  <div class=" flex  justify-center">  <img src="images\testimonial-3.jpg" alt="" class="rounded-full h-20 w-20"></div>
+                    <p class="text-gray-600 font-bold">Jane Smith</p>
+                </div>
+                <p class="text-gray-800 mb-4 text-center">"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin velit."</p>  
+            </div>
+        </div>
+        <div class="swiper-slide my-2 h-50 w-full flex items-center  border-2  justify-center">
+            <div class="testimonial-card w-full bg-white shadow-md rounded-lg p-2">
+                <div class="text-center">
+                  <div class=" flex  justify-center">  <img src="images\testimonial-4.jpg" alt="" class="rounded-full h-20 w-20"></div>
+                    <p class="text-gray-600 font-bold">Jane Smith</p>
+                </div>
+                <p class="text-gray-800 mb-4 text-center">"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin velit."</p>  
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- Include Swiper's JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 3000, // Adjust autoplay interval in milliseconds
+            disableOnInteraction: false, // Keep autoplay running after user interaction
+        },
+       
+      
+    });
+});
+</script>
+
+                        <!-- Footer -->
+                        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 bg-black">
+                            <div class="container text-start px-12 my-8">
+                                <h1 class="text-2xl text-white font-bold mb-2">Company</h1>
+                                <nav>
+                                    <ul>
+                                        <li class="item">
+                                            <i class="ri-arrow-right-s-line text-white"></i>
+                                            <a href="#" class="text-white">About us</a>
+                                        </li>
+                                        <li class="item">
+                                            <i class="ri-arrow-right-s-line text-white"></i>
+                                            <a href="#" class="text-white">Contact us</a>
+                                        </li>
+                                        <li class="item">
+                                            <i class="ri-arrow-right-s-line text-white"></i>
+                                            <a href="#" class="text-white">Privacy Policy</a>
+                                        </li>
+                                        <li class="item">
+                                            <i class="ri-arrow-right-s-line text-white"></i>
+                                            <a href="#" class="text-white">Term & Condition</a>
+                                        </li>
+                                        <li class="item">
+                                            <i class="ri-arrow-right-s-line text-white"></i>
+                                            <a href="#" class="text-white">FQA & Help</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="container text-start px-12 my-8">
+                                <h1 class="text-2xl text-white font-bold mb-2">Contact</h1>
+                                <div class="mb-2 md:mb-0">
+                                    <ul class=" gap-4 md:gap-4 text-center md:text-left">
+                                        <li class="text-white text-sm flex items-center"><i class="ri-map-pin-2-line mr-1"></i> 123 Street, New York, USA</li>
+                                        <li class="text-white text-sm flex items-center"><i class="ri-phone-fill mr-1"></i> +012 345 6789</li>
+                                        <li class="text-white text-sm flex items-center"><i class="ri-mail-open-fill mr-1"></i> info@example.com</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul class="flex gap-2 md:gap-4 mt-4">
+                                        <li class="text-white text-sm rounded-full border-b hover:bg-blue-800"><i class="ri-twitter-fill"></i></li>
+                                        <li class="text-white text-sm rounded-full border-b hover:bg-blue-800"><i class="ri-facebook-fill"></i></li>
+                                        <li class="text-white text-sm rounded-full border-b hover:bg-blue-800"><i class="ri-linkedin-fill"></i></li>
+                                        <li class="text-white text-sm rounded-full border-b hover:bg-pink-800"><i class="ri-instagram-fill"></i></li>
+                                        <li class="text-white text-sm rounded-full border-b hover:bg-red-800"><i class="ri-youtube-fill"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="container text-start my-8 pl-12 ">
+                                <h1 class="text-2xl text-white font-bold mb-2">Gallery</h1>
+                                <div class="">
+                                    <div class="grid grid-cols-3 gap-2 ">
+                                        <div class="img bg-white p-2">
+                                            <img src="images\package-1 (1).jpg" alt=".." class="">
+                                        </div>
+                                        <div class="img bg-white p-2">
+                                            <img src="images\package-2 (2).jpg" alt=".." class="">
+                                        </div>
+                                        <div class="img bg-white p-2">
+                                            <img src="images\package-3.jpg" alt=".." class="">
+                                        </div>
+                                        </div>
+                                        <div class="grid grid-cols-3 gap-2 mt-2">
+                                        <div class="img bg-white p-2">
+                                            <img src="images\package-2 (2).jpg" alt=".." class="">
+                                        </div>
+                                        <div class="img bg-white p-2">
+                                            <img src="images\package-3.jpg" alt=".." class="">
+                                        </div>
+                                        <div class="img bg-white p-2">
+                                            <img src="images\package-1 (1).jpg" alt=".." class="">
+                                        </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="container text-start px-12 my-8 max-w-lg mx-auto">
+                                <h1 class="text-2xl text-white font-bold mb-2">Newsletter</h1>
+                                <p class="text-white mb-4">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                                <form class="flex flex-col md:flex-row md:items-center bg-white">
+                                    <input type="email" placeholder="Your Email" class="w-full md:flex-1 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                                    <button type="submit" class="mt-2 md:mt-0 md:ml-2 bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-300 focus:outline-none focus:ring-2 focus:ring-green-500">Sign up</button>
+                                </form>
+                            </div>
+                        </div>                                     
+                                            <!-- base-footer -->
+                        <div class="">
+                            <footer class="bg-black text-white py-4 flex justify-center items-center">
+                                <p>©Tourist website 2024 - Your Company Name Design By @kajal</p>
+                              </footer>
+                        </div> 
+<!-- Script for Mobile Menu Toggle -->
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+</script>                            
+</body>
+</html>

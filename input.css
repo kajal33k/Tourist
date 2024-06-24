@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 764px) {
+  #menu li {
+    display: none;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.about-image {
+  animation: fadeIn 1.5s forwards, slideIn 1.5s forwards;
+}
+
+.about-content {
+  animation: fadeIn 1.5s forwards, slideIn 3.5s forwards;
+}
+
+.main {
+  animation: fadeIn 1.5s forwards, slideIn 5.5s forwards;
+}
+
+.destination {
+  animation: fadeIn 3.5s forwards, slideIn 7.5s forwards;
+}
+
+.container {
+  animation: fadeIn 3.5s forwards, slideIn 7.5s forwards;
+  overflow: hidden;
+}
+
+.book {
+  animation: fadeIn 3.5s forwards, slideIn 7.5s forwards;
+}
+
+.box {
+  animation: fadeIn 3.5s forwards, slideIn 7.5s forwards;
+}
+
+.card {
+  animation: fadeIn 3.5s forwards, slideIn 7.5s forwards;
+}
+
+.swiper-container {
+  animation: fadeIn 3.5s forwards, slideIn 7.5s forwards;
+}
